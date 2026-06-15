@@ -1,3 +1,4 @@
+import AdminDashboard from "./pages/AdminDashboard"
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import { lazy, Suspense } from 'react'
 import Layout from './components/Layout'
@@ -21,6 +22,7 @@ function App() {
             <Route path="/youtube" element={<YouTube />} />
             <Route path="/voices" element={<Voices />} />
             <Route path="/pricing" element={<Pricing />} />
+          <Route path="/admin" element={<AdminDashboard />} />
           </Routes>
         </Suspense>
       </Layout>
